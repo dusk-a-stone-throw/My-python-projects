@@ -6,11 +6,10 @@ items.sort()
 totalSize = 0
 i = 0
 while (True):
-    if (totalSize + items[i] <= 8358):
+    if (totalSize + items[i] <= 8358 and i < 2324):
         totalSize += items[i]
     else:
-        print(items[i - 1])
         print(i)
+        print(items[i - 1])
         break
     i += 1
-print(totalSize)
