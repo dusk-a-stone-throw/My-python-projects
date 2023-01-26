@@ -1,12 +1,12 @@
+from collections import Counter
+
 f = open("35482.txt")
 a = f.readlines()
 b = []
-c = []
 d = []
 for i in range(len(a)):
     b.append(a[i].count("G"))
-    c.append(a[i])
-f = str(a[b.index(min(b))])
-for i in f:
-    d.append(f.count(i))
-print(f[d.index(max(d))])
+f = Counter(str(a[b.index(min(b))]))
+print(f.most_common()[0][0])
+g = {"1": "a"}
+print(g[0])
