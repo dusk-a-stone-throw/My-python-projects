@@ -12,15 +12,6 @@ for s in f:
         more_than_50_remainders[i % 80] += 1
     else:
         less_or_equal_50_remainders[i % 80] += 1
-# for i in range(40):
-#     print(list(more_than_50_remainders.items())[i])
-#     print(
-#         list(less_or_equal_50_remainders.items())[
-#             len(less_or_equal_50_remainders) - 1 - i])
-#     print("========")
-#     input()
-#     count += more_than_50_remainders[i] * less_or_equal_50_remainders[
-#         len(less_or_equal_50_remainders) - 1 - i]
 for i in range(1, 40):
     count += more_than_50_remainders[i] * less_or_equal_50_remainders[-i]
     count += more_than_50_remainders[-i] * less_or_equal_50_remainders[i]
