@@ -1,4 +1,4 @@
-f = open("27424_A.txt")
+f = open("27424_B.txt")
 n = int(f.readline())
 sum = 0
 s = [0]
@@ -12,8 +12,8 @@ for i in f:
     max2 = max(a2) if len(a2) > 0 else 0
     max0 = max(a0) if len(a0) > 0 else 0
     s = []
-    if max1 != 0: s.append(max1)
-    if max2 != 0: s.append(max2)
-    if max0 != 0: s.append(max0)
+    for i in (max1, max2, max0):
+        if i != 0:
+            s.append(i)
 print(max(max1,
           max2))  # max0 mod 3 == 0, don't need it but important for algorithm

@@ -8,9 +8,9 @@ e = []  # others
 for i in range(len(a)):
     if (a[i] % 14 == 0):
         b.append(a[i])
-    if (a[i] % 7 == 0):
+    elif (a[i] % 7 == 0):
         c.append(a[i])
-    if (a[i] % 2 == 0):
+    elif (a[i] % 2 == 0):
         d.append(a[i])
     else:
         e.append(a[i])
