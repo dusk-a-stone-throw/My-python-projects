@@ -31,5 +31,5 @@ def newtonBinomial(n):
     return polynomial
 
 
-n = int(input("Please enter n for (a+b)^n: "))
-print(newtonBinomial(n))
+n = int(input("Please enter n for (a+b)ⁿ: "))
+print("(a+b)" + toSuper(n)+"="+ newtonBinomial(n))
