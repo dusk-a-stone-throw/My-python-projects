@@ -45,7 +45,7 @@ def toSub(num):
 
 
 # A fast and easy method to divide a polynomial P(x) by (x-a)
-def ruffiniRule(a, polynomial=[]):
+def ruffiniRule(a, polynomial):
     # WARNING: this function does not return a remainder because I imply that 'a' is a root of the polynomial
     result = []
     result.append(polynomial[0])
@@ -77,7 +77,7 @@ def getSupposedRoots(hightestDegreeCoefficient, freeTerm):
     return supposedRoots
 
 
-def checkRoots(supposedRoots=[], coefficients=[]):
+def checkRoots(supposedRoots, coefficients):
     roots = []
     while (True):
         rootFound = False
@@ -100,7 +100,7 @@ def checkRoots(supposedRoots=[], coefficients=[]):
                    if len(coefficients) >= 2 else "")
 
 
-def getPolynomial(coefficients=[]):  # convert array of coeffs to a cute string
+def getPolynomial(coefficients):  # convert array of coeffs to a cute string
     polynomial = ""
     # the last coeffecient can't be 0 probably
     for i in range(0, len(coefficients) - 1):
