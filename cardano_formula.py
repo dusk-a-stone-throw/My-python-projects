@@ -1,5 +1,7 @@
 from fractions import Fraction
+
 # WARNING: roots found with this program are approximate (but close to the truth).
+
 
 # Let ax³ + bx ² + cx+ d = 0, where a != 0
 # Divide all sides by a
