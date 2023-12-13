@@ -10,6 +10,11 @@ while (True):
         totalSize += items[i]
     else:
         print(i)
-        print(items[i - 1])
+        # we can remove one element and
+        # replace it with the largest element we are able to
+        for j in sorted(items, reverse=True):
+            if 8358 - (totalSize - items[i - 1]) >= j:
+                print(j)
+                break
         break
     i += 1
